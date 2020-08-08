@@ -1,4 +1,4 @@
-from rest_framework import viewsets # type: ignore
+from rest_framework import viewsets  # type: ignore
 from .models import Value, Principle
 from .serializers import ValueSerializer, PrincipleSerializer
 
