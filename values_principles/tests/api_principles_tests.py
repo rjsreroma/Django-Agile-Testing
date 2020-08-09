@@ -4,7 +4,7 @@ from values_principles.models import Principle
 
 
 class APITestValue(APITestCase):
-    def test_create_value(self):
+    def test_create_principle(self):
         factory = APIRequestFactory()
         request = factory.post(
             "/principles/",
@@ -12,7 +12,7 @@ class APITestValue(APITestCase):
             format="json",
         )
 
-    def test_update_value(self):
+    def test_update_principle(self):
         factory = APIRequestFactory()
         request = factory.put(
             "/principles/1",
@@ -20,6 +20,6 @@ class APITestValue(APITestCase):
             format="json",
         )
 
-    def test_delete_value(self):
+    def test_delete_principle(self):
         factory = APIRequestFactory()
         request = factory.delete("/principles/2", format="json")
